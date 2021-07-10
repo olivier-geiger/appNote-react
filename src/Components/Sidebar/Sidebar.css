@@ -6,7 +6,7 @@
   z-index: 100;
 }
 .visible-nav {
-  transform: translateX(0px)!important;
+  transform: translateX(0px) !important;
 }
 .sidebar {
   flex-shrink: 0;
@@ -43,12 +43,12 @@
 }
 
 .sidebar li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    cursor: pointer;
-    padding: 25px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  padding: 25px 0;
 }
 
 .sidebar ul li img {
@@ -56,6 +56,15 @@
   height: 40px;
 }
 
+.login {
+  position: absolute;
+  bottom: 0;
+  left: center;
+  color: #fff;
+}
+.login-logo {
+  font-size: 40px;
+}
 
 .toggle-nav-btn {
   position: absolute;
@@ -71,7 +80,7 @@
   width: 25px;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 900px) {
   .container-sidebar {
     transform: translateX(-100%);
   }
@@ -86,4 +95,4 @@
     width: 10px;
     height: 10px;
   }
- }
+}

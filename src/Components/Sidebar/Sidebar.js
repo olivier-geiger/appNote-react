@@ -8,6 +8,7 @@ import LogoEdit from './ImgsSidebar/edit.svg';
 import FolderIcon from './ImgsSidebar/folder.svg';
 import Tools from './ImgsSidebar/settings.svg';
 import Menu from './ImgsSidebar/menu.svg';
+import Login from './ImgsSidebar/login.svg';
 
 // import
 import './Sidebar.css';
@@ -69,10 +70,18 @@ const Sidebar = () => {
             </Fade>
 
             <Fade left>
-              <li>
-                <img src={Tools} alt='logo tools' />
-              </li>
+              <Link to='/settings'>
+                <li>
+                  <img src={Tools} alt='logo tools' />
+                </li>
+              </Link>
             </Fade>
+
+            <Link to='/login'>
+              <li className='login'>
+                <i className='fas fa-sign-in-alt login-logo'></i>
+              </li>
+            </Link>
           </ul>
         </div>
       </nav>
