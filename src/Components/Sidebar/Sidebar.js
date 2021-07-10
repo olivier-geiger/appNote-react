@@ -8,7 +8,6 @@ import LogoEdit from './ImgsSidebar/edit.svg';
 import FolderIcon from './ImgsSidebar/folder.svg';
 import Tools from './ImgsSidebar/settings.svg';
 import Menu from './ImgsSidebar/menu.svg';
-import Login from './ImgsSidebar/login.svg';
 
 // import
 import './Sidebar.css';
