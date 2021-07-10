@@ -1,6 +1,5 @@
 // Library
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 
 // Components
 import LogoEdit from './ImgsSidebar/edit.svg';
@@ -50,17 +49,13 @@ const Sidebar = () => {
           </div>
 
           <ul>
-            {/* <Link to='/'> */}
             <li>
               <img src={FolderIcon} alt='logo folder' />
             </li>
-            {/* </Link> */}
 
-            {/* <Link to='/edit'> */}
             <li>
               <img src={LogoEdit} alt='logo edit' />
             </li>
-            {/* </Link> */}
 
             <li>
               <img src={Tools} alt='logo tools' />
