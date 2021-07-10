@@ -1,5 +1,7 @@
 // Library
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { Fade } from 'react-reveal';
 
 // Components
 import LogoEdit from './ImgsSidebar/edit.svg';
@@ -7,6 +9,7 @@ import FolderIcon from './ImgsSidebar/folder.svg';
 import Tools from './ImgsSidebar/settings.svg';
 import Menu from './ImgsSidebar/menu.svg';
 
+// import
 import './Sidebar.css';
 
 const Sidebar = () => {
@@ -49,17 +52,27 @@ const Sidebar = () => {
           </div>
 
           <ul>
-            <li>
-              <img src={FolderIcon} alt='logo folder' />
-            </li>
+            <Fade left>
+              <Link to='/'>
+                <li>
+                  <img src={FolderIcon} alt='logo folder' />
+                </li>
+              </Link>
+            </Fade>
 
-            <li>
-              <img src={LogoEdit} alt='logo edit' />
-            </li>
+            <Fade left>
+              <Link to='/edit'>
+                <li>
+                  <img src={LogoEdit} alt='logo edit' />
+                </li>
+              </Link>
+            </Fade>
 
-            <li>
-              <img src={Tools} alt='logo tools' />
-            </li>
+            <Fade left>
+              <li>
+                <img src={Tools} alt='logo tools' />
+              </li>
+            </Fade>
           </ul>
         </div>
       </nav>
