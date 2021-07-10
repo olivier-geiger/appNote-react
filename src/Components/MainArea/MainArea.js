@@ -1,5 +1,5 @@
 // Library
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
 import { Fade } from 'react-reveal';
 
 // import
